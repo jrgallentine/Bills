@@ -1,0 +1,11 @@
+--create database Bills;
+
+--create table Bills(
+--Id int primary key not null identity(1,1),
+--[Name] nvarchar(20),
+--Amount float,
+--URL nvarchar(144,)
+--Due date,
+--[Description] nvarchar(144)
+--Paid bit
+--);
