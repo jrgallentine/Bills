@@ -13,14 +13,11 @@ namespace BillReminder.Controllers
     {
         public IActionResult Index()
         {
-
-            return View();
+            List<Bill> bills = new List<Bill>();
+            bills = _context.Bills.ToList();
+            return View(bills);
         }
-        public IActionResult Bill()
-        {
 
-            return View();
-        }
         public IActionResult Create()
         {
             return View();

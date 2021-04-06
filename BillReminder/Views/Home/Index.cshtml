@@ -1,2 +1,10 @@
-﻿@model Bill
+﻿@model List<Bill>
 
+@foreach (Bill b in Model)
+{
+    <h3>@b.Name</h3>
+    <p>@b.Due</p>
+    <p>@b.Amount</p>
+    <p>@b.Url</p>
+    <p>@b.Description</p>
+}
